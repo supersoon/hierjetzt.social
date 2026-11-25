@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>hierjetzt · Deine Freunde sind gleich um die Ecke</title>
+  <meta name="description" content="Check ein, wo du gerade bist. Wer in der Nähe ist, kommt vorbei. Nur für Freunde, nach einer Woche wieder weg. Aus Europa, ohne Tracking.">
+  <meta name="color-scheme" content="light only">
+  <meta name="theme-color" content="#e3e7fb">
+  <meta property="og:title" content="hierjetzt">
+  <meta property="og:description" content="Deine Freunde sind gleich um die Ecke. Check ein, wer in der Nähe ist, kommt vorbei.">
+  <meta property="og:image" content="https://hierjetzt.social/img/og.png">
+  <meta property="og:url" content="https://hierjetzt.social/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/icon-180.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Zum Inhalt</a>
+
+  <header class="top">
+    <a class="brand" href="./" aria-label="hierjetzt Startseite">
+      <svg class="brand-pin" viewBox="0 0 512 512" aria-hidden="true"><use href="#pin"/></svg>
+      <span>hierjetzt</span>
+    </a>
+    <span class="beta">Bald</span>
+  </header>
+
+  <main id="main">
+    <!-- 1 · Hero: headline, value prop, and a tiny city where friends meet -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow">Die Check-in-App nur für Freunde</p>
+        <h1 id="hero-title">
+          <span class="word">Deine</span> <span class="word">Freunde</span> <span class="word">sind</span>
+          <span class="word">gleich</span> <span class="word">um</span> <span class="word">die</span> <span class="word hl">Ecke.</span>
+        </h1>
+        <p class="lead">Check ein, wo du gerade bist. Wer in der Nähe ist, kommt vorbei. Nur deine Freunde sehen es, und nach einer Woche ist es wieder weg.</p>
+        <button type="button" class="cta" data-open-waitlist>Auf die Warteliste!</button>
+        <p class="fine">Kostenlos. Ohne Werbung. Ohne Tracking.</p>
+      </div>
+
+      <figure class="city" aria-labelledby="city-caption">
+        <svg class="streets" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"></svg>
+        <div class="pins" aria-hidden="true">
+          <span class="spot" style="--x:58;--y:50"><svg viewBox="0 0 512 512"><use href="#pin"/></svg><span class="ring"></span></span>
+          <span class="friend f-lisa" style="--x:58;--y:50;--d:0;--c:var(--color-yellow)">L</span>
+          <span class="friend f-mo walks" style="--x:18;--y:22;--ex:50;--ey:44;--d:1;--c:var(--color-mint)">M</span>
+          <span class="friend f-jule walks" style="--x:86;--y:18;--ex:66;--ey:43;--d:2;--c:var(--color-peach)">J</span>
+          <span class="friend f-deniz walks" style="--x:26;--y:84;--ex:51;--ey:58;--d:3;--c:var(--color-blue)">D</span>
+          <span class="friend f-ben" style="--x:88;--y:86;--d:4;--c:var(--color-lilac)">B</span>
+          <span class="bubble b1">Lisa ist gerade im <b>elbgold Café</b></span>
+          <span class="bubble b2"><b>Mo, Jule und Deniz</b> sind auch da</span>
+        </div>
+        <figcaption id="city-caption" class="sr">Lisa checkt im Café ein. Drei Freunde aus der Nähe sehen es und kommen vorbei.</figcaption>
+        <button type="button" class="replay" aria-label="Animation nochmal abspielen">Nochmal</button>
+      </figure>
+    </section>
+
+    <!-- 2 · Two screens: feed on an iPhone, share image on an Android -->
+    <section class="screens" aria-labelledby="screens-title">
+      <h2 id="screens-title" class="sr">So sieht hierjetzt aus</h2>
+      <div class="devices">
+        <figure class="device iphone" aria-labelledby="cap-feed">
+          <div class="frame">
+            <div class="island" aria-hidden="true"></div>
+            <div class="screen feed" aria-hidden="true">
+              <div class="mini-map">
+                <svg class="streets small" viewBox="0 0 300 120" preserveAspectRatio="xMidYMid slice"></svg>
+                <span class="mpin" style="--x:30;--y:55;--c:var(--color-yellow)">L</span>
+                <span class="mpin" style="--x:62;--y:38;--c:var(--color-mint)">M</span>
+                <span class="mpin new" style="--x:78;--y:66;--c:var(--color-peach)">J</span>
+              </div>
+              <div class="day">Heute</div>
+              <div class="entry entry-new">
+                <div class="who"><span class="av" style="--c:var(--color-peach)">J</span><span><b>Jule</b><small>gerade eben</small></span></div>
+                <div class="tile kind-park"><small>Park · Altona</small><strong>Rathenaupark</strong><p>Decke liegt, Sonne scheint.</p></div>
+              </div>
+              <div class="entry">
+                <div class="who"><span class="av" style="--c:var(--color-yellow)">L</span><span><b>Lisa</b><small>vor 12 Min.</small></span></div>
+                <div class="tile kind-cafe"><small>Café · Hamburg-Ottensen</small><strong>elbgold Café</strong><p>Kommt Kaffee trinken!</p></div>
+                <div class="acts"><span class="heart">♥</span> <span class="likes">3</span><span class="cmt">Bin in 5 Min. da – Mo</span></div>
+              </div>
+              <div class="entry">
+                <div class="who"><span class="av" style="--c:var(--color-mint)">M</span><span><b>Mo</b><small>vor 1 Std.</small></span></div>
+                <div class="tile kind-laden"><small>Bahnhof · Altona</small><strong>Bahnhof Altona</strong></div>
+              </div>
+              <nav class="tabs"><i></i><b>+</b><i></i></nav>
+            </div>
+          </div>
+          <figcaption id="cap-feed"><b>Der Feed.</b> Wer ist gerade wo, auf der Karte und als Liste.</figcaption>
+        </figure>
+
+        <figure class="device android" aria-labelledby="cap-share">
+          <div class="frame">
+            <div class="punch" aria-hidden="true"></div>
+            <div class="screen story" aria-hidden="true">
+              <img src="img/cafe.webp" alt="" width="460" height="400" loading="lazy" decoding="async">
+              <p class="s-pre">Ich bin gerade bei</p>
+              <p class="s-place">elbgold Café</p>
+              <p class="s-area">Hamburg-Ottensen</p>
+              <p class="s-quote">„Kommt Kaffee trinken!“</p>
+              <p class="s-logo"><svg viewBox="0 0 512 512"><use href="#pin"/></svg>hierjetzt</p>
+              <span class="gesture"></span>
+            </div>
+          </div>
+          <figcaption id="cap-share"><b>Teilen.</b> Aus jedem Check-in wird ein Story-Bild, ohne Link zurück.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3 · Hyperlocal: scroll zooms from the whole world down to the café across the street -->
+    <section class="zoom" aria-labelledby="zoom-title">
+      <div class="zoom-stage">
+        <svg class="zoom-map" viewBox="-500 -500 1000 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><defs><radialGradient id="fadeout"><stop offset="0.55" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient><mask id="town" maskUnits="userSpaceOnUse" x="-900" y="-900" width="1800" height="1800"><circle r="900" fill="url(#fadeout)"/></mask></defs><g class="zoom-world"></g><g class="zoom-city"><g mask="url(#town)" class="zoom-town"></g></g></svg>
+        <div class="zoom-ring" aria-hidden="true"><span class="zoom-me"><svg viewBox="0 0 512 512"><use href="#pin"/></svg></span>
+          <span class="zf" style="--a:-40deg;--c:var(--color-yellow)">L</span>
+          <span class="zf" style="--a:70deg;--c:var(--color-mint)">M</span>
+          <span class="zf" style="--a:190deg;--c:var(--color-peach)">J</span>
+        </div>
+        <div class="zoom-copy">
+          <h2 id="zoom-title" class="sr">Hyperlokal</h2>
+          <p class="zoom-km" aria-hidden="true"><span class="zoom-n">20.000</span> <span class="zoom-unit">km</span></p>
+          <ol class="zoom-steps">
+            <li data-step="0">Andere Netzwerke zeigen dir die ganze Welt.</li>
+            <li data-step="1">Deine Stadt ist schon näher.</li>
+            <li data-step="2">Dein Viertel noch näher.</li>
+            <li data-step="3"><strong>hierjetzt zeigt dir, wer gerade hier ist.</strong> Lisa sitzt im Café gegenüber. Geh rüber.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · What makes hierjetzt hierjetzt -->
+    <section class="why" aria-labelledby="why-title">
+      <h2 id="why-title">Was hierjetzt anders macht</h2>
+      <ul class="tiles">
+        <li class="t kind-cafe"><small>Hyperlokal</small><h3>Um die Ecke statt um die Welt</h3><p>hierjetzt ist für das, was in Laufweite passiert: das Café, der Park, der Bahnsteig. Kein Feed aus aller Welt, nur deine Leute in deiner Nähe.</p></li>
+        <li class="t kind-park"><small>Treffen</small><h3>Ein Check-in ist eine Einladung</h3><p>Kein Post, der gefallen will. Wer in der Nähe ist, kommt vorbei oder schreibt einen Satz drunter. Aus „bin gerade hier“ wird ein Treffen.</p></li>
+        <li class="t kind-kneipe"><small>Nur Freunde</small><h3>Keine Follower, keine Fremden</h3><p>Rein kommt man nur per Einladung, Freundschaft gilt in beide Richtungen. Niemand kann dich suchen, auch nicht die Freunde deiner Freunde.</p></li>
+        <li class="t kind-restaurant"><small>Flüchtig</small><h3>Nach einer Woche wieder weg</h3><p>Check-ins werden nach sieben Tagen gelöscht, wirklich gelöscht. Kein Bewegungsprofil, keine Ortshistorie. Den Standort fragt die App nur ab, wenn du eincheckst.</p></li>
+        <li class="t kind-laden"><small>Aus Europa</small><h3>DSGVO von Anfang an</h3><p>Server in Deutschland, Karten aus OpenStreetMap, keine Google-Dienste. Keine Werbung, keine Analyse, kein Verkauf von Daten. Fotos verlieren beim Hochladen alle versteckten Angaben.</p></li>
+        <li class="t kind-plain"><small>Einfach</small><h3>Kein Passwort, keine Nummer</h3><p>Anmelden mit Passkey, ohne E-Mail, ohne Telefonnummer, ohne Facebook-Login. Konto löschen geht mit einem Klick, alles ist sofort weg.</p></li>
+      </ul>
+    </section>
+
+    <!-- 5 · Closing -->
+    <section class="end" aria-labelledby="end-title">
+      <svg class="end-pin" viewBox="0 0 512 512" aria-hidden="true"><use href="#pin"/></svg>
+      <h2 id="end-title">Noch sind wir eine kleine Testgruppe.</h2>
+      <p>Wir lassen nach und nach mehr Leute rein, am liebsten ganze Freundeskreise. Trag dich ein, wir schreiben dir, sobald du dabei sein kannst.</p>
+      <button type="button" class="cta" data-open-waitlist>Auf die Warteliste!</button>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    <p>Ohne Cookies, ohne Tracking, ohne Webfonts. Diese Seite wiegt rund <span class="weight">120</span> kB.</p>
+  </footer>
+
+  <!-- Waiting list form -->
+  <dialog class="wl" aria-labelledby="wl-title">
+    <button type="button" class="wl-close" aria-label="Schließen" data-close>×</button>
+    <form class="wl-form" novalidate data-api="https://kiddytasker.tail4d20f6.ts.net/api/waitlist">
+      <h2 id="wl-title">Auf die Warteliste</h2>
+      <p class="wl-lead">Drei Angaben, dann bist du drauf. Wir schreiben dir, sobald du einchecken kannst.</p>
+
+      <label for="wl-name">Vorname</label>
+      <input id="wl-name" name="firstName" type="text" autocomplete="given-name" maxlength="60" required aria-describedby="wl-name-err">
+      <p class="err" id="wl-name-err" aria-live="polite"></p>
+
+      <label for="wl-email">E-Mail</label>
+      <input id="wl-email" name="email" type="email" autocomplete="email" inputmode="email" maxlength="254" required aria-describedby="wl-email-err">
+      <p class="err" id="wl-email-err" aria-live="polite"></p>
+
+      <fieldset class="nets">
+        <legend>Welche Netzwerke nutzt du gerade? <span>(optional)</span></legend>
+        <div class="chips">
+          <label><input type="checkbox" name="networks" value="instagram"><span>Instagram</span></label>
+          <label><input type="checkbox" name="networks" value="whatsapp"><span>WhatsApp</span></label>
+          <label><input type="checkbox" name="networks" value="swarm"><span>Swarm</span></label>
+          <label><input type="checkbox" name="networks" value="bereal"><span>BeReal</span></label>
+          <label><input type="checkbox" name="networks" value="snapchat"><span>Snapchat</span></label>
+          <label><input type="checkbox" name="networks" value="tiktok"><span>TikTok</span></label>
+          <label><input type="checkbox" name="networks" value="facebook"><span>Facebook</span></label>
+          <label><input type="checkbox" name="networks" value="threads"><span>Threads</span></label>
+          <label><input type="checkbox" name="networks" value="x"><span>X</span></label>
+          <label><input type="checkbox" name="networks" value="bluesky"><span>Bluesky</span></label>
+          <label><input type="checkbox" name="networks" value="mastodon"><span>Mastodon</span></label>
+          <label><input type="checkbox" name="networks" value="linkedin"><span>LinkedIn</span></label>
+          <label><input type="checkbox" name="networks" value="signal"><span>Signal</span></label>
+          <label><input type="checkbox" name="networks" value="telegram"><span>Telegram</span></label>
+        </div>
+        <label for="wl-other" class="other-label">Andere</label>
+        <input id="wl-other" name="other" type="text" maxlength="60" placeholder="z. B. Polarsteps">
+      </fieldset>
+
+      <label class="consent">
+        <input type="checkbox" name="consent" required aria-describedby="wl-consent-err">
+        <span>Ihr dürft mir eine Mail schicken, sobald ich mitmachen kann. Austragen geht jederzeit mit einer kurzen Mail. Mehr in der <a href="datenschutz.html" target="_blank">Datenschutzerklärung</a>.</span>
+      </label>
+      <p class="err" id="wl-consent-err" aria-live="polite"></p>
+
+      <div class="hp" aria-hidden="true"><label>Website <input name="website" tabindex="-1" autocomplete="off"></label></div>
+
+      <button type="submit" class="cta block">Eintragen</button>
+      <p class="err form-err" role="alert"></p>
+    </form>
+
+    <div class="wl-done" hidden>
+      <svg class="done-pin" viewBox="0 0 512 512" aria-hidden="true"><use href="#pin"/></svg>
+      <div class="tile kind-cafe">
+        <small>Warteliste · hierjetzt</small>
+        <strong tabindex="-1">Du bist drauf, <span class="done-name"></span>!</strong>
+        <p>Wir schreiben dir, sobald du einchecken kannst. Bring deine Freunde mit.</p>
+      </div>
+      <button type="button" class="cta block plain" data-close>Schließen</button>
+    </div>
+  </dialog>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="pin" viewBox="0 0 512 512"><path d="M256 0c-104.4 0-189.7 83-189.7 187.3C66.3 327.1 256 512 256 512s189.7-184.9 189.7-324.7C445.7 83 360.4 0 256 0z" fill="#8e30a7"/><path d="M209.2 192.7v-33.2a46.9 46.8 90 0 1 93.6 0v33.2" fill="none" stroke="#e3e7fb" stroke-width="20" stroke-linecap="round"/><rect x="176.2" y="181.6" width="159.6" height="129.8" rx="18" fill="#e3e7fb"/><circle cx="256" cy="236.8" r="15.1" fill="#8e30a7"/><rect x="249.1" y="239.6" width="13.8" height="35.9" rx="5" fill="#8e30a7"/></symbol>
+  </svg>
+</body>
+</html>
